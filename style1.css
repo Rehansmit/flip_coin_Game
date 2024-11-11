@@ -5,20 +5,21 @@ body{
     color: yellowgreen;
 }
 
-.p1img{
-    width: 150px;
-    height: 150px;
-    border: 2px solid orange;
-}
+
 
 .p1name{
     width: 300px;
     height: 50px;
     border: 2px solid orange;
+    justify-content: flex-start;
 }
 
 .p1slection{
     width: 100px;
     height: 100px;
     border: 2px solid orange;
+}
+.player2{
+    display: inline-block;
+    justify-content: left;
 }
