@@ -44,3 +44,8 @@ gameForm()
         
       }
 
+
+      function hidecont(){
+        document.getElementById("maindiv").style.display ="None"
+      }
+

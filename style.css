@@ -11,14 +11,12 @@ body{
     background-size: cover;
 }
 
-/* .logo{
-    justify-content: center;
-    text-align: center;
+.main{
+    height: 400px;
     width: 500px;
-    height: 150px;
-    display: flex;
-    margin: auto;
-} */
+}
+
+
 h3{
     justify-content: center;
     text-align: center;
