@@ -6,6 +6,12 @@ body{
 }
 
 
+.heading{
+    justify-content: center;
+text-align: center;
+}
+
+
 
 .p1name{
     width: 300px;
@@ -22,4 +28,13 @@ body{
 .player2{
     display: inline-block;
     justify-content: left;
+}
+
+.player2_box{
+    display: inline-block;
+    margin-left: 300px;
+}
+
+.select-coin{
+    text-align: center;
 }
