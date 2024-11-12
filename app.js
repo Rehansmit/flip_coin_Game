@@ -29,10 +29,18 @@ function startGame() {
     
    
 window.location.href = "game.html";
- }
+gameForm()
+
+        }
 
 
+        function gameForm(){
+        var p1name = document.getElementById("player1").value
+        var p2name = document.getElementById("player2").value
 
-            
+        document.getElementById("p1n").innerHTML=`${p1name}`
+        document.getElementById("p1n").innerHTML=`${p1name}`
 
+        
+      }
 
