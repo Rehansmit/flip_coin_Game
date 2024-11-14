@@ -29,23 +29,64 @@ function startGame() {
     
    
 window.location.href = "game.html";
-gameForm()
 
         }
 
 
-        function gameForm(){
-        var p1name = document.getElementById("player1").value
-        var p2name = document.getElementById("player2").value
+        
+        function clikonhead (){
+          document.getElementById("p1slected").innerHTML=`<h4> Head </h4>`
+          document.getElementById("p2slected").innerHTML=`<h4> Tail </h4>`
 
-        document.getElementById("p1n").innerHTML=`${p1name}`
-        document.getElementById("p1n").innerHTML=`${p1name}`
+        }
+
+
+        function clikontail (){
+          document.getElementById("p1slected").innerHTML=`<h4> Tail </h4>`
+          document.getElementById("p2slected").innerHTML=`<h4> Head </h4>`
+
+        }
+
+
 
         
-      }
+function tossthecoin(){ 
+
+document.getElementById("flipimg").scr ="assets/coin.gif"
+// var p1slected = document.getElementById("p1slected").value       
+  
+}
+  
+  
+//   coinarr=["Head","Tail"]
+//   randomvalue= Math.floor(Math.random()*2)
 
 
-      function hidecont(){
-        document.getElementById("maindiv").style.display ="None"
-      }
+//   if(coinarr[randomvalue]=== p1slected){
+  
+//   Swal.fire
+//   ({
+//     title: "Congratulations! " + "Player 1" , 
+//     text: " You Won" ,
+//     icon: "success"
+//   });
+
+  
+//   }
+   
+//     else{
+//     Swal.fire
+//     ({
+//       title: "Congratulations! " + "Player 2 " , 
+//       text: " You Won" ,
+//       icon: "success"
+//     });
+
+//    }
+   
+      
+      
+//     setTimeout(tossthecoin,2000)
+//    }
+    
 
