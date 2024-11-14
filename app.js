@@ -50,43 +50,47 @@ window.location.href = "game.html";
 
 
         
-function tossthecoin(){ 
+function stillimage (){
+  document.getElementById("flip_img").scr ="assets/head.jpg"
+  var p1slected = document.getElementById("p1slected").value       
+   
 
-document.getElementById("flipimg").scr ="assets/coin.gif"
-// var p1slected = document.getElementById("p1slected").value       
-  
 }
-  
-  
-//   coinarr=["Head","Tail"]
-//   randomvalue= Math.floor(Math.random()*2)
 
-
-//   if(coinarr[randomvalue]=== p1slected){
+function tossthecoin(){ 
+stillimage()
+ 
   
-//   Swal.fire
-//   ({
-//     title: "Congratulations! " + "Player 1" , 
-//     text: " You Won" ,
-//     icon: "success"
-//   });
+coinarr=["Head","Tail"]
+randomvalue= Math.floor(Math.random()*2)
+var result = coinarr[randomvalue]
 
+console.log(result)
+
+if(result === p1slected){
   
-//   }
+Swal.fire
+({
+title: "Congratulations! " + "Player 1", 
+text: "Result is "  + result + " You Won" ,
+icon: "success"
+});
+
+   }
    
-//     else{
-//     Swal.fire
-//     ({
-//       title: "Congratulations! " + "Player 2 " , 
-//       text: " You Won" ,
-//       icon: "success"
-//     });
+else{
+    Swal.fire
+    ({
+      title: "Congratulations! " + "Player 2 " , 
+      text: "Result is "  + result + " You Won" ,
+      icon: "success"
+    });
 
-//    }
+   }
    
       
       
-//     setTimeout(tossthecoin,2000)
-//    }
+    setTimeout(stillimage,3000)
+   }
     
 
