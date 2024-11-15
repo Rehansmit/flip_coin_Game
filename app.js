@@ -97,8 +97,6 @@ function stillimage(){
 
 
 
-        
-  
 function flipcoin()
 {
 
@@ -111,36 +109,17 @@ var result = coinarr[randomvalue]
 
 if(result=== p_selected){
   
-  // setTimeout(player1win,3000)
-  Swal.fire
-  ({
-    title: "Congratulations! " + player1Name , 
-    text: "Result is "  + result +" "+ "You Won",
-    icon: "success"
-  });
-
+  setTimeout(player1win,3000)
 
 
    }
    
 else{
-  // setTimeout(player2win,3000)
-  
-  
-  Swal.fire
-  ({
-    title: "Congratulations! " + player2Name , 
-    text: "Result is "  + result +" "+ "You Won",
-    icon: "success"
-  });
-
-
-
-
-
+  setTimeout(player2win,3000)
+   
    }
    
         
    }
-    
+        
 
