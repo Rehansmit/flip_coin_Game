@@ -67,7 +67,7 @@ function startGame() {
   
 function flipcoin()
 { 
-document.getElementById("flip_img").scr ="assets/head.jpg"
+document.getElementById("flip_img").scr ="assets/flip coin.gif"
 var p_selected =document.getElementById("p1slected").innerText
 
 var p1nm = document.getElementById("player1").value  
