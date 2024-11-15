@@ -1,11 +1,11 @@
-
-
 // functin for Start Game
+var player1Name
+var player2Name
 
 function startGame() {
-
-    var player1Name = document.getElementById("player1").value;
-    var player2Name = document.getElementById("player2").value;
+  document.getElementById("body").classList.add("body2")
+  player1Name= document.getElementById("player1").value;
+  player2Name= document.getElementById("player2").value;
 
     if (player1Name === "") {
         Swal.fire({
@@ -28,11 +28,8 @@ function startGame() {
     
    document.getElementById("maindiv").classList.remove("d-none")
    document.getElementById("pname").classList.add("d-none")
-   var p1n = document.getElementById("player1").value  
-   var p2n = document.getElementById("player2").value  
-
-   document.getElementById("p1name").innerHTML=`<h4>${p1n}</h4>`
-   document.getElementById("p2name").innerHTML=`<h4>${p2n}</h4>`
+   document.getElementById("p1name").innerHTML=`<h4>${player1Name}</h4>`
+   document.getElementById("p2name").innerHTML=`<h4>${player2Name}</h4>`
 
 
         }
@@ -55,9 +52,46 @@ function startGame() {
         }
 
 
+// function added
+
+function player1win(){
+  coinarr=["Head","Tail"]
+randomvalue= Math.floor(Math.random()*2)
+var result = coinarr[randomvalue]
+  Swal.fire
+({
+title: "Congratulations! " + player1Name, 
+text: "Result is "  + result + " "+"You Won" ,
+icon: "success"
+});
+
+}
+
+// function added
+
+function player2win(){
+  coinarr=["Head","Tail"]
+randomvalue= Math.floor(Math.random()*2)
+var result = coinarr[randomvalue]
+  Swal.fire
+  ({
+    title: "Congratulations! " + player2Name , 
+    text: "Result is "  + result +" "+ "You Won",
+    icon: "success"
+  });
 
 
+}
+// function added
 
+function tosscoinimage(){
+  document.getElementById("image-coin").src="assets/coin.gif"
+}
+
+// function added for stopping the image
+function stillimage(){
+  document.getElementById("image-coin").src="assets/flipstill.PNG"
+}
 
 
 
@@ -66,41 +100,28 @@ function startGame() {
         
   
 function flipcoin()
-{ 
-document.getElementById("flip_img").scr ="assets/flip coin.gif"
-var p_selected =document.getElementById("p1slected").innerText
+{
 
-var p1nm = document.getElementById("player1").value  
-var p2nm = document.getElementById("player2").value  
- 
+tosscoinimage()
+setTimeout(stillimage,3000)
+var p_selected =document.getElementById("p1slected").innerText
 coinarr=["Head","Tail"]
 randomvalue= Math.floor(Math.random()*2)
-var p
 var result = coinarr[randomvalue]
 
 if(result=== p_selected){
   
-Swal.fire
-({
-title: "Congratulations! " + p1nm, 
-text: "Result is "  + result + " "+"You Won" ,
-icon: "success"
-});
+  setTimeout(player1win,3000)
+
 
    }
    
 else{
-    Swal.fire
-    ({
-      title: "Congratulations! " + p2nm , 
-      text: "Result is "  + result +" "+ "You Won",
-      icon: "success"
-    });
-
+  setTimeout(player2win,3000)
+   
    }
    
         
-    // setTimeout(tossthecoin,5000)
    }
     
 
