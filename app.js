@@ -90,7 +90,7 @@ function tosscoinimage(){
 
 // function added for stopping the image
 function stillimage(){
-  document.getElementById("image-coin").src="assets/flipstill.PNG"
+  document.getElementById("image-coin").src="assets/flip still.PNG"
 }
 
 
@@ -111,14 +111,33 @@ var result = coinarr[randomvalue]
 
 if(result=== p_selected){
   
-  setTimeout(player1win,3000)
+  // setTimeout(player1win,3000)
+  Swal.fire
+  ({
+    title: "Congratulations! " + player1Name , 
+    text: "Result is "  + result +" "+ "You Won",
+    icon: "success"
+  });
+
 
 
    }
    
 else{
-  setTimeout(player2win,3000)
-   
+  // setTimeout(player2win,3000)
+  
+  
+  Swal.fire
+  ({
+    title: "Congratulations! " + player2Name , 
+    text: "Result is "  + result +" "+ "You Won",
+    icon: "success"
+  });
+
+
+
+
+
    }
    
         
