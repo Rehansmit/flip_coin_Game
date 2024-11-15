@@ -57,9 +57,15 @@ function startGame() {
 
 
 
+
+
+
+
+
+
         
   
-function tossthecoin()
+function flipcoin()
 { 
 document.getElementById("flip_img").scr ="assets/head.jpg"
 var p_selected =document.getElementById("p1slected").innerText
